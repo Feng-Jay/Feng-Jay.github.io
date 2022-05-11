@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "cn-China"
-title                    : "Fengjie Li"
+title                    : "Fengjie Li's homePage"
 title_separator          : "-"
 name                     : &name "Fengjie Li's site"
 description              : &description "Fengjie Li's introductino page."
@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Fengjie Li"
+  name             : "Fengjie Li(李 丰杰)"
   avatar           : "photo.jpg"
-  bio              : "If it hurts, do it more frequently, and bring the pain forward."
-  location         : "TianJin University"
+  # bio              : "If it hurts, do it more frequently, and bring the pain forward."
+  # location         : "TianJin University"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "fengjay.f.li@gmail.com"
+  # email            : "fengjay.f.li@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "Feng-Jay"
+  # github           : "Feng-Jay"
   google_plus      :
   keybase          :
   instagram        :
