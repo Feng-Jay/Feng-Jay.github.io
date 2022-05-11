@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-**Undergraduated student at TianJin University**
+**Undergraduate student at TianJin University**
 
 **Major in Computer Science and Technology**
 
