@@ -9,7 +9,7 @@
 locale                   : "cn-China"
 title                    : "Fengjie Li"
 title_separator          : "-"
-name                     : &name "Fengjie Li"
+name                     : &name "TJU Undergraduate"
 description              : &description "Fengjie Li's introductino page."
 url                      : https://www.fengjieli.top # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
