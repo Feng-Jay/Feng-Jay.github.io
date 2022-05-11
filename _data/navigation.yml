@@ -22,4 +22,5 @@ main:
     url: /markdown/
   
   - title: "Life Writings"
-    url:"/blog/"
+    url: "/blog/"
+  
