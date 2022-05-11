@@ -9,7 +9,7 @@
 locale                   : "cn-China"
 title                    : "Academic page"
 title_separator          : "-"
-name                     : &name "TJU Undergraduate"
+name                     : &name "Fengjie Li's site"
 description              : &description "Fengjie Li's introductino page."
 url                      : https://www.fengjieli.top # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Fengjie Li"
   avatar           : "photo.jpg"
-  bio              : "Carpe diem."
+  bio              : "If it hurts, do it more frequently, and bring the pain forward."
   location         : "TianJin University"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
