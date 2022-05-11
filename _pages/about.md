@@ -14,6 +14,8 @@ redirect_from:
 
 Email: 3019244196[AT]tju[DOT]edu[DOT]cn
 
+Github: https://github.com/Feng-Jay
+
 I'm insterested in Computer Arichitecture and System Softwares
 
 
