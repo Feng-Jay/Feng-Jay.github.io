@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "cn-China"
-title                    : "Fengjie Li"
+title                    : "Academic page"
 title_separator          : "-"
 name                     : &name "TJU Undergraduate"
 description              : &description "Fengjie Li's introductino page."
