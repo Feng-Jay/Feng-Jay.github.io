@@ -18,13 +18,13 @@ Github: [https://github.com/Feng-Jay](https://github.com/Feng-Jay)
 
 ## <font color=FireBrick>News</font>
 
-Participating in *NSCCSC*
+* Participating in *NSCCSC*
 
-Practicing algorithm on *leetcode*
+* Practicing algorithm on *leetcode*
 
-Learning serval [online courses](https://github.com/Feng-Jay/Be-competitive)
+* Learning serval [online courses](https://github.com/Feng-Jay/Be-competitive)
 
-Struggling to be apply for a Master degree
+* Struggling to be apply for a Master degree
 
 ## <font color=steelblue>Research Interests</font>
 
@@ -36,26 +36,26 @@ This is the front page of a website that is powered by the [academicpages templa
 
 ## <font color=steelblue>Research Experiences</font>
 
-**[2022.05~now]**: Training on NXP Semiconductors, researching 5G technology on NXP SOC.
+1. **[2022.05~now]**: Training on NXP Semiconductors, researching 5G technology on NXP SOC.
 
-**[2021.10~now]**: Software Defect Prediction Research under the guidance of Professor [Jiajun Jiang](https://xgdsmileboy.github.io/index_cn.html) 
+2. **[2021.10~now]**: Software Defect Prediction Research under the guidance of Professor [Jiajun Jiang](https://xgdsmileboy.github.io/index_cn.html) 
 
-**[2021.01~2021.12]**: Transfer Learning Research under the guidance of [Zheng Wang](https://zhengwangtju.github.io/)
+3. **[2021.01~2021.12]**: Transfer Learning Research under the guidance of [Zheng Wang](https://zhengwangtju.github.io/)
 
 
 ## <font color= peru>Awards</font>
 
-**[2022.05]**: MCM/ICM S Awards 
+1. **[2022.05]**: MCM/ICM S Awards 
 
-**[2021.12]**: Three Good Students of Tianjin University
+2. **[2021.12]**: Three Good Students of Tianjin University
 
-**[2021.12]**: Suzhou Yucai Scholarship
+3. **[2021.12]**: Suzhou Yucai Scholarship
 
-**[2021.10]**: TianJin University CIC *Computer Network Classes Design* **Grand Prize**
+4. **[2021.10]**: TianJin University CIC *Computer Network Classes Design* **Grand Prize**
 
-**[2021.08]**: CSCC: Operating System Design **National Third Prize**
+5. **[2021.08]**: CSCC: Operating System Design **National Third Prize**
 
-**[2020.12]**: Three Good Students of Tianjin University
+6. **[2020.12]**: Three Good Students of Tianjin University
 
 
 
