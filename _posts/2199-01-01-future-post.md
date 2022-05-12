@@ -1,7 +1,7 @@
 ---
 title: 'Future Blog Post'
 date: 2022-05-11
-permalink: /posts/2022/05/ASE2019_Exception_Cloud_Systems
+permalink: /posts/2022/05/announce
 tags:
   - announcement
 ---
