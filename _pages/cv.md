@@ -6,7 +6,9 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+<embed src="{{https://www.fengjieli.top}}/files/李丰杰简历.pdf" width="600" height="700" type='application/pdf'>
 
+<!-- 
 {% include base_path %}
 
 Education
@@ -56,4 +58,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
