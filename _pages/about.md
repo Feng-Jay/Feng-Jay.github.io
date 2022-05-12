@@ -16,11 +16,17 @@ Email: 3019244196[AT]tju[DOT]edu[DOT]cn
 
 Github: [https://github.com/Feng-Jay](https://github.com/Feng-Jay)
 
-## <font color=FireBrick>*News*</font>
+## <font color=FireBrick>News</font>
 
+Participating in *NSCCSC*
 
+Practicing algorithm on *leetcode*
 
-## <font color=royalblue>Research Interests</font>
+Learning serval [online courses](https://github.com/Feng-Jay/Be-competitive)
+
+Struggling to be apply for a Master degree
+
+## <font color=steelblue>Research Interests</font>
 
 I’m interested in Computer Arichitecture and System Softwares.
 
@@ -28,7 +34,7 @@ I’m interested in Computer Arichitecture and System Softwares.
 <!-- 
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
-## <font color=royalblue>Research Experiences</font>
+## <font color=steelblue>Research Experiences</font>
 
 **[2022.05~now]**: Training on NXP Semiconductors, researching 5G technology on NXP SOC.
 
