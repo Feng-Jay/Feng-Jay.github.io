@@ -16,35 +16,40 @@ Email: 3019244196[AT]tju[DOT]edu[DOT]cn
 
 Github: [https://github.com/Feng-Jay](https://github.com/Feng-Jay)
 
+## <font color=FireBrick>*News*</font>
+
+
+
 ## <font color=royalblue>Research Interests</font>
 
 I’m interested in Computer Arichitecture and System Softwares.
 
+
 <!-- 
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
-## <font color=Indigo>Research Experiences</font>
+## <font color=royalblue>Research Experiences</font>
 
-**[2022.05~now ]**: Training on NXP Semiconductors, researching 5G technology on NXP SOC.
+**[2022.05~now]**: Training on NXP Semiconductors, researching 5G technology on NXP SOC.
 
-**[2021.10~now ]**: Software Defect Prediction Research under the guidance of Professor [Jiajun Jiang](https://xgdsmileboy.github.io/index_cn.html) 
+**[2021.10~now]**: Software Defect Prediction Research under the guidance of Professor [Jiajun Jiang](https://xgdsmileboy.github.io/index_cn.html) 
 
-**[2021.01~2021.12]**: Transfer Learning Research under the guidance of [Zheng Wang](https://zhengwangtju.github.io/)
+**[2021.01~2021.12 **: Transfer Learning Research under the guidance of [Zheng Wang](https://zhengwangtju.github.io/)
 
 
 ## <font color= peru>Awards</font>
 
-2022.05: MCM/ICM S Awards 
+**[2022.05]**: MCM/ICM S Awards 
 
-2021.12: Three Good Students of Tianjin University
+**[2021.12]**: Three Good Students of Tianjin University
 
-2021.12: Suzhou Yucai Scholarship
+**[2021.12]**: Suzhou Yucai Scholarship
 
-2021.10: TianJin University CIC *Computer Network Classes Design* **Grand Prize**
+**[2021.10]**: TianJin University CIC *Computer Network Classes Design* **Grand Prize**
 
-2021.08: CSCC: Operating System Design **National Third Prize**
+**[2021.08]**: CSCC: Operating System Design **National Third Prize**
 
-2020.12: Three Good Students of Tianjin University
+**[2020.12]**: Three Good Students of Tianjin University
 
 
 
