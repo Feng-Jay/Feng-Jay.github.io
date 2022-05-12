@@ -40,7 +40,7 @@ This is the front page of a website that is powered by the [academicpages templa
 
 **[2021.10~now]**: Software Defect Prediction Research under the guidance of Professor [Jiajun Jiang](https://xgdsmileboy.github.io/index_cn.html) 
 
-**[2021.01~2021.12 **: Transfer Learning Research under the guidance of [Zheng Wang](https://zhengwangtju.github.io/)
+**[2021.01~2021.12]**: Transfer Learning Research under the guidance of [Zheng Wang](https://zhengwangtju.github.io/)
 
 
 ## <font color= peru>Awards</font>
