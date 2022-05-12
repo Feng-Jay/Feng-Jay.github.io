@@ -1,11 +1,11 @@
 ---
 title: 'Future Blog Post'
-date: 2199-01-01
-permalink: /posts/2012/08/blog-post-4/
+date: 2022-05-11
+# permalink: /posts/2012/08/blog-post-4/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - announcement
 ---
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+Hello, this is my new website. So, there is no blogs. You can go to [My CSDN](https://blog.csdn.net/qq_46088286?spm=1000.2115.3001.5343) or [my previous site](http://ffhw.site/) to read.
+
+In the following days, I will transfer some blogs, and writing something new.
