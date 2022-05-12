@@ -6,8 +6,8 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-<embed src="{{https://www.fengjieli.top}}/files/李丰杰简历.pdf" width="600" height="700" type='application/pdf'>
-
+<embed src="{{https://www.fengjieli.top}}/files/李丰杰简历.pdf" width="600" height="700">
+<!-- @import  -->
 <!-- 
 {% include base_path %}
 
