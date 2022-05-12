@@ -51,11 +51,13 @@ This is the front page of a website that is powered by the [academicpages templa
 
 3. **[2021.12]**: Suzhou Yucai Scholarship
 
-4. **[2021.10]**: TianJin University CIC *Computer Network Classes Design* **Grand Prize**
+4. **[2021.12]**: Outstanding Student of College of Intelligence And Computing
 
-5. **[2021.08]**: CSCC: Operating System Design **National Third Prize**
+5. **[2021.10]**: TianJin University CIC *Computer Network Classes Design* **Grand Prize**
 
-6. **[2020.12]**: Three Good Students of Tianjin University
+6. **[2021.08]**: CSCC: Operating System Design **National Third Prize**
+
+7. **[2020.12]**: Three Good Students of Tianjin University
 
 
 
