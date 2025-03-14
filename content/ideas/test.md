@@ -1,5 +1,5 @@
 ---
-title: test
+title: Example Post
 draft: false
 tags:
   - example-tag
