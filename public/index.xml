@@ -6,17 +6,17 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>LLM benefits from &quot;test time scaling&quot;, how about us?</title>
+    <link>https://quartz.jzhao.xyz/ideas/testTime-and-lifethinking</link>
+    <guid>https://quartz.jzhao.xyz/ideas/testTime-and-lifethinking</guid>
+    <description>When we make decisions, why not also use "test time scaling"?.</description>
+    <pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
     <title>Welcome!</title>
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
     <description>I’m Fengjie Li (you can call me FFengJay as well). This is my personal wiki that I use to organize my notes, ideas and thoughts. About Research I’m a PostGraduate Student in Computer Science at Tianjin University, China.</description>
     <pubDate>Fri, 14 Mar 2025 01:38:38 GMT</pubDate>
-  </item><item>
-    <title>Example Post</title>
-    <link>https://quartz.jzhao.xyz/ideas/test</link>
-    <guid>https://quartz.jzhao.xyz/ideas/test</guid>
-    <description>This is a description.</description>
-    <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
