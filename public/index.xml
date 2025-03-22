@@ -6,6 +6,12 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Leetcode Hot-100-Hash</title>
+    <link>https://quartz.jzhao.xyz/research/hash</link>
+    <guid>https://quartz.jzhao.xyz/research/hash</guid>
+    <description>test.</description>
+    <pubDate>Sat, 22 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
     <title>LLM benefits from &quot;test time scaling&quot;, how about us?</title>
     <link>https://quartz.jzhao.xyz/ideas/testTime-and-lifethinking</link>
     <guid>https://quartz.jzhao.xyz/ideas/testTime-and-lifethinking</guid>
