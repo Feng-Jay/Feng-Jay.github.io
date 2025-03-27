@@ -1,9 +1,9 @@
 ---
-title: NJU-Software Analysis-01
+title: NJU-Software Analysis-Introduction
 draft: false
 tags:
   - Software Analysis
-description: NJU Software Analysis-01
+description: NJU Software Analysis-Introduction
 date: 2025-03-26
 ---
 
@@ -41,4 +41,4 @@ Abstraction: Concrete Domain -> Abstract Domain
 
 Over-approximation: Transfer Function, evaluate on abstract values.
 
-Over-approximation: Control Flow, 
+Over-approximation: Control Flow, 汇聚点需要merge

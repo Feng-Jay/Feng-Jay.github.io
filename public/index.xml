@@ -6,10 +6,16 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>NJU-Software Analysis-01</title>
+    <title>NJU-Software Analysis-IR</title>
+    <link>https://quartz.jzhao.xyz/research/softwareAnalysis02</link>
+    <guid>https://quartz.jzhao.xyz/research/softwareAnalysis02</guid>
+    <description>NJU Software Analysis-IR.</description>
+    <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>NJU-Software Analysis-Introduction</title>
     <link>https://quartz.jzhao.xyz/research/softwareAnalysis01</link>
     <guid>https://quartz.jzhao.xyz/research/softwareAnalysis01</guid>
-    <description>NJU Software Analysis-01.</description>
+    <description>NJU Software Analysis-Introduction.</description>
     <pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Leetcode Hot-100-TwoPointer</title>
