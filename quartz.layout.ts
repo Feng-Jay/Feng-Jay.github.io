@@ -54,7 +54,7 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RecentNotes({
         title: "Recent Writing",
         limit: 4,
-        showTags: false,
+        showTags: true,
         filter: (f) => f.slug!.startsWith("ideas/") || f.slug!.startsWith("reading/"),
         linkToMore: "ideas/" as SimpleSlug,
       }),
@@ -63,7 +63,7 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RecentNotes({
         title: "Recent Notes",
         limit: 2,
-        showTags: false,
+        showTags: true,
         filter: (f) => f.slug!.startsWith("research/"),
         linkToMore: "research/" as SimpleSlug,
       }),

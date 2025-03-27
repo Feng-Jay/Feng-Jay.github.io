@@ -7,11 +7,11 @@ I'm Fengjie Li (you can call me FFengJay as well). This is my personal wiki that
 
 ## About Research 
 
-I'm a PostGraduate Student in Computer Science at Tianjin University, China. I'm exploring the program analysis, program repair, program synthesis. Recently, I'm have finished serveral works about combining large language models and program repair. You can find my works in [my google scholar page](https://scholar.google.com/citations?user=btcwJ_EAAAAJ&hl=en), feel free to contact me if you have any questions. And I will share my [[research]] notes here.
+I'm a PostGraduate Student in Computer Science at Tianjin University, China. I'm exploring the program analysis, program repair, program synthesis. Recently, I'm have finished serveral works about combining large language models and program repair. You can find my works in [my google scholar page](https://scholar.google.com/citations?user=btcwJ_EAAAAJ&hl=en), feel free to contact me if you have any questions. And I will share my [[research/index|research]] notes here.
 
 ## About Reading
 
-I'm insterested in reading philosophy, history and psychology. I'm reading books about Camus and Hesse and history about Ming dynasty. I'll share my [[reading]] notes here in the future.
+I'm insterested in reading philosophy, history and psychology. I'm reading books about Camus and Hesse and history about Ming dynasty. I'll share my [[reading/index|reading]] notes and [[ideas/index|ideas]] here in the future.
 
 ## About Life
 
