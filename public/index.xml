@@ -2,61 +2,61 @@
 <rss version="2.0">
     <channel>
       <title>FFengJay</title>
-      <link>https://quartz.jzhao.xyz</link>
+      <link>https://fengjieli.top</link>
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
     <title>Welcome!</title>
-    <link>https://quartz.jzhao.xyz/</link>
-    <guid>https://quartz.jzhao.xyz/</guid>
+    <link>https://fengjieli.top/</link>
+    <guid>https://fengjieli.top/</guid>
     <description>I’m Fengjie Li (you can call me FFengJay as well). This is my personal wiki that I use to organize my notes, ideas and thoughts. About Research I’m a PostGraduate Student in Computer Science at Tianjin University, China.</description>
     <pubDate>Thu, 27 Mar 2025 01:38:13 GMT</pubDate>
   </item><item>
     <title>insteresting ideas</title>
-    <link>https://quartz.jzhao.xyz/ideas/</link>
-    <guid>https://quartz.jzhao.xyz/ideas/</guid>
+    <link>https://fengjieli.top/ideas/</link>
+    <guid>https://fengjieli.top/ideas/</guid>
     <description></description>
     <pubDate>Thu, 27 Mar 2025 01:37:55 GMT</pubDate>
   </item><item>
     <title>reading notes</title>
-    <link>https://quartz.jzhao.xyz/reading/</link>
-    <guid>https://quartz.jzhao.xyz/reading/</guid>
+    <link>https://fengjieli.top/reading/</link>
+    <guid>https://fengjieli.top/reading/</guid>
     <description></description>
     <pubDate>Thu, 27 Mar 2025 01:37:39 GMT</pubDate>
   </item><item>
     <title>research notes</title>
-    <link>https://quartz.jzhao.xyz/research/</link>
-    <guid>https://quartz.jzhao.xyz/research/</guid>
+    <link>https://fengjieli.top/research/</link>
+    <guid>https://fengjieli.top/research/</guid>
     <description></description>
     <pubDate>Thu, 27 Mar 2025 01:37:19 GMT</pubDate>
   </item><item>
     <title>NJU-Software Analysis-IR</title>
-    <link>https://quartz.jzhao.xyz/research/softwareAnalysis02</link>
-    <guid>https://quartz.jzhao.xyz/research/softwareAnalysis02</guid>
+    <link>https://fengjieli.top/research/softwareAnalysis02</link>
+    <guid>https://fengjieli.top/research/softwareAnalysis02</guid>
     <description>NJU Software Analysis-IR.</description>
     <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>NJU-Software Analysis-Introduction</title>
-    <link>https://quartz.jzhao.xyz/research/softwareAnalysis01</link>
-    <guid>https://quartz.jzhao.xyz/research/softwareAnalysis01</guid>
+    <link>https://fengjieli.top/research/softwareAnalysis01</link>
+    <guid>https://fengjieli.top/research/softwareAnalysis01</guid>
     <description>NJU Software Analysis-Introduction.</description>
     <pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Leetcode Hot-100-TwoPointer</title>
-    <link>https://quartz.jzhao.xyz/research/two_pointer</link>
-    <guid>https://quartz.jzhao.xyz/research/two_pointer</guid>
+    <link>https://fengjieli.top/research/two_pointer</link>
+    <guid>https://fengjieli.top/research/two_pointer</guid>
     <description>test.</description>
     <pubDate>Sun, 23 Mar 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Leetcode Hot-100-Hash</title>
-    <link>https://quartz.jzhao.xyz/research/hash</link>
-    <guid>https://quartz.jzhao.xyz/research/hash</guid>
+    <link>https://fengjieli.top/research/hash</link>
+    <guid>https://fengjieli.top/research/hash</guid>
     <description>test.</description>
     <pubDate>Sat, 22 Mar 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>LLM benefits from &quot;test time scaling&quot;, how about us?</title>
-    <link>https://quartz.jzhao.xyz/ideas/testTime-and-lifethinking</link>
-    <guid>https://quartz.jzhao.xyz/ideas/testTime-and-lifethinking</guid>
+    <link>https://fengjieli.top/ideas/testTime-and-lifethinking</link>
+    <guid>https://fengjieli.top/ideas/testTime-and-lifethinking</guid>
     <description>When we make decisions, why not also use "test time scaling"?.</description>
     <pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate>
   </item>
