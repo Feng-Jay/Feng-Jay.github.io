@@ -99,5 +99,67 @@ Algorithm:
 
 ## Live Variables Analysis
 
+同样先给该分析的定义:
+
+![definition](https://raw.githubusercontent.com/feng-jay/pichost/master/img/20250329103434.png)
+
+应用场景: 例如寄存器分配，当一个变量不被用之后，那么对应的寄存器就可以被释放。
+
+****
+
+该分析也是一个may analysis, Backward analysis: 只要有一条路用了变量v，那么就可能是live的。这个live指的是stmt用了变量, 所以backward可以一遍遍历就更新.
+
+Abstraction: All variables in the program, represented by bit vector.
+
+Safe-Approximation: 
+
+* Transfer Function: IN[B] = $usage_B$ $\cup$ (OUT[B] - $def_B$), usage不包括define-后-use的情况。
+
+* Control-Flow: OUT[B] = $\cup_{S\ S\ a\ succeesor\ of\ B}$
+
+算法:
+
+![](https://raw.githubusercontent.com/feng-jay/pichost/master/img/20250329110043.png) 
+
 
 ## Avaiable Expressions Analysis
+
+依旧先给定义:
+
+从Entry到点p的，每条路径都要算x op y 而且这些路径在x op y计算之后不再重定义x或y. 可以把x op y 看作一个函数抽取出来优化程序。
+
+![](https://raw.githubusercontent.com/feng-jay/pichost/master/img/20250329121957.png)
+
+This is a forward analysis.
+
+****
+
+Abstraction: 程序中所有可能的表达式，用bit vector表示。
+
+Safe-Approximation:
+
+Transfer Function: OUT[B] = $gen_B$ $\cup$ (IN[B] - $kill_B$), kill_B = expression invovle re-defined variables.
+
+Control-Flow: IN[B] = $\cap_{P\ a\ predecessor\ of\ B}$ OUT[P]
+
+![](https://raw.githubusercontent.com/feng-jay/pichost/master/img/20250329123151.png)
+
+Algorithm:
+
+每个BB的初始化是ALL，因为汇聚的时候是做交集，如果有0根本不更新。
+
+![](https://raw.githubusercontent.com/feng-jay/pichost/master/img/20250329123433.png)
+
+
+## Summary
+
+| |Reaching Definitions | Live Variables | Avaiable Expressions|
+|---|---- | --- | -- |
+|Domain| All Definitions | All Variables | All Expressions|
+|Direction| Forward | Backward | Forward |
+|May/Must| May | May | Must |
+|Boundary| OUT[entry] = $\phi$ | IN[exit]=$\phi$ | OUT[entry] = $\phi$ |
+|Initialization| OUT[all] = $\phi$ | IN[all] = $\phi$ | OUT[entry] = $\phi$, OUT[BB] = ALL  |
+|Transfer Function| OUT = gen + (IN - kill) | ... | ... |
+|Meet| $\cup$ | $\cup$ | $\cap$ |
+
