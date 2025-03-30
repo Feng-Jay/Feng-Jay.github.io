@@ -6,10 +6,16 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>NJU-Software Analysis-DataFlow Analysis I</title>
+    <title>NJU-Software Analysis-DataFlow Analysis Foundations</title>
+    <link>https://fengjieli.top/research/softwareAnalysis04</link>
+    <guid>https://fengjieli.top/research/softwareAnalysis04</guid>
+    <description>NJU Software Analysis-DataFlow Analysis Foundations.</description>
+    <pubDate>Sun, 30 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>NJU-Software Analysis-DataFlow Analysis Application</title>
     <link>https://fengjieli.top/research/softwareAnalysis03</link>
     <guid>https://fengjieli.top/research/softwareAnalysis03</guid>
-    <description>NJU Software Analysis-DataFlow Analysis I.</description>
+    <description>NJU Software Analysis-DataFlow Analysis Application.</description>
     <pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Welcome!</title>
@@ -59,12 +65,6 @@
     <guid>https://fengjieli.top/research/hash</guid>
     <description>test.</description>
     <pubDate>Sat, 22 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>LLM benefits from &quot;test time scaling&quot;, how about us?</title>
-    <link>https://fengjieli.top/ideas/testTime-and-lifethinking</link>
-    <guid>https://fengjieli.top/ideas/testTime-and-lifethinking</guid>
-    <description>When we make decisions, why not also use "test time scaling"?.</description>
-    <pubDate>Sun, 16 Mar 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
