@@ -2,7 +2,7 @@
 title: NJU-Software Analysis-DataFlow Analysis Foundations
 draft: false
 tags:
-  - Software Analysis
+  - Program Analysis
   - DataFlow
 description: NJU Software Analysis-DataFlow Analysis Foundations
 date: 2025-03-30

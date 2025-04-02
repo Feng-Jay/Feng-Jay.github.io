@@ -6,6 +6,24 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>NJU-Software Analysis-DataFlow Analysis Foundations-II</title>
+    <link>https://fengjieli.top/research/softwareAnalysis05</link>
+    <guid>https://fengjieli.top/research/softwareAnalysis05</guid>
+    <description>NJU Software Analysis-DataFlow Analysis Foundations-II.</description>
+    <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Syntactic Capabilities of LLM</title>
+    <link>https://fengjieli.top/research/paper_syntactic_llm</link>
+    <guid>https://fengjieli.top/research/paper_syntactic_llm</guid>
+    <description>To what extent can LLMs be used to understand and manipulate programming languages?.</description>
+    <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Paper Roundup</title>
+    <link>https://fengjieli.top/research/paper_reading</link>
+    <guid>https://fengjieli.top/research/paper_reading</guid>
+    <description>this blog organized by some interesting topics, each topic will be a link that has a list of papers.</description>
+    <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
     <title>NJU-Software Analysis-DataFlow Analysis Foundations</title>
     <link>https://fengjieli.top/research/softwareAnalysis04</link>
     <guid>https://fengjieli.top/research/softwareAnalysis04</guid>
@@ -47,24 +65,6 @@
     <guid>https://fengjieli.top/research/softwareAnalysis02</guid>
     <description>NJU Software Analysis-IR.</description>
     <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>NJU-Software Analysis-Introduction</title>
-    <link>https://fengjieli.top/research/softwareAnalysis01</link>
-    <guid>https://fengjieli.top/research/softwareAnalysis01</guid>
-    <description>NJU Software Analysis-Introduction.</description>
-    <pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Leetcode Hot-100-TwoPointer</title>
-    <link>https://fengjieli.top/research/two_pointer</link>
-    <guid>https://fengjieli.top/research/two_pointer</guid>
-    <description>test.</description>
-    <pubDate>Sun, 23 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Leetcode Hot-100-Hash</title>
-    <link>https://fengjieli.top/research/hash</link>
-    <guid>https://fengjieli.top/research/hash</guid>
-    <description>test.</description>
-    <pubDate>Sat, 22 Mar 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
