@@ -6,6 +6,12 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>reading notes</title>
+    <link>https://fengjieli.top/reading/</link>
+    <guid>https://fengjieli.top/reading/</guid>
+    <description>在表达内心情绪的时候，似乎母语的表现力更好一点~ 所以技术笔记用英文写，那么读书笔记就用中文啦~.</description>
+    <pubDate>Sun, 27 Apr 2025 02:27:24 GMT</pubDate>
+  </item><item>
     <title>初窥历史——《明朝那些事》</title>
     <link>https://fengjieli.top/reading/%E6%98%8E%E6%9C%9D%E9%82%A3%E4%BA%9B%E4%BA%8B</link>
     <guid>https://fengjieli.top/reading/%E6%98%8E%E6%9C%9D%E9%82%A3%E4%BA%9B%E4%BA%8B</guid>
@@ -17,6 +23,12 @@
     <guid>https://fengjieli.top/research/softwareAnalysis05</guid>
     <description>NJU Software Analysis-DataFlow Analysis Foundations-II.</description>
     <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Syntactic Capabilities of LLM</title>
+    <link>https://fengjieli.top/research/paper_syntactic_llm</link>
+    <guid>https://fengjieli.top/research/paper_syntactic_llm</guid>
+    <description>To what extent can LLMs be used to understand programming languages?.</description>
+    <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>Paper Roundup</title>
     <link>https://fengjieli.top/research/paper_reading</link>
@@ -48,23 +60,11 @@
     <description></description>
     <pubDate>Thu, 27 Mar 2025 01:37:55 GMT</pubDate>
   </item><item>
-    <title>reading notes</title>
-    <link>https://fengjieli.top/reading/</link>
-    <guid>https://fengjieli.top/reading/</guid>
-    <description>在表达内心情绪的时候，似乎母语的表现力更好一点~ 所以技术笔记用英文写，那么读书笔记就用中文啦~.</description>
-    <pubDate>Thu, 27 Mar 2025 01:37:39 GMT</pubDate>
-  </item><item>
     <title>research notes</title>
     <link>https://fengjieli.top/research/</link>
     <guid>https://fengjieli.top/research/</guid>
     <description></description>
     <pubDate>Thu, 27 Mar 2025 01:37:19 GMT</pubDate>
-  </item><item>
-    <title>NJU-Software Analysis-IR</title>
-    <link>https://fengjieli.top/research/softwareAnalysis02</link>
-    <guid>https://fengjieli.top/research/softwareAnalysis02</guid>
-    <description>NJU Software Analysis-IR.</description>
-    <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

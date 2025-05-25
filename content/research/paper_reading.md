@@ -8,5 +8,7 @@ description: this blog organized by some interesting topics, each topic will be 
 date: 2025-03-31
 ---
 
+## LLM for Code
+
 [[research/paper_syntactic_llm]]
 
