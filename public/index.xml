@@ -6,6 +6,12 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>抽离</title>
+    <link>https://fengjieli.top/ideas/%E6%8A%BD%E7%A6%BB</link>
+    <guid>https://fengjieli.top/ideas/%E6%8A%BD%E7%A6%BB</guid>
+    <description>当肉体处于无聊的稳态，精神便开始抽离.</description>
+    <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
+  </item><item>
     <title>纵有疾风起，人生不言弃——《强风吹拂》</title>
     <link>https://fengjieli.top/reading/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82</link>
     <guid>https://fengjieli.top/reading/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82</guid>
@@ -59,12 +65,6 @@
     <guid>https://fengjieli.top/</guid>
     <description>I’m Fengjie Li (you can call me FFengJay as well). This is my personal wiki that I use to organize my notes, ideas and thoughts. About Research I’m a PostGraduate Student in Computer Science at Tianjin University, China.</description>
     <pubDate>Thu, 27 Mar 2025 01:38:13 GMT</pubDate>
-  </item><item>
-    <title>insteresting ideas</title>
-    <link>https://fengjieli.top/ideas/</link>
-    <guid>https://fengjieli.top/ideas/</guid>
-    <description></description>
-    <pubDate>Thu, 27 Mar 2025 01:37:55 GMT</pubDate>
   </item>
     </channel>
   </rss>
