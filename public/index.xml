@@ -6,11 +6,29 @@
       <description>Last 10 notes on FFengJay</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>个人价值</title>
+    <link>https://fengjieli.top/ideas/%E4%B8%AA%E4%BA%BA%E4%BB%B7%E5%80%BC%E4%B8%8E%E9%94%9A%E5%AE%9A</link>
+    <guid>https://fengjieli.top/ideas/%E4%B8%AA%E4%BA%BA%E4%BB%B7%E5%80%BC%E4%B8%8E%E9%94%9A%E5%AE%9A</guid>
+    <description>寻找自我的价值是苦痛的来源.</description>
+    <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+  </item><item>
     <title>抽离</title>
     <link>https://fengjieli.top/ideas/%E6%8A%BD%E7%A6%BB</link>
     <guid>https://fengjieli.top/ideas/%E6%8A%BD%E7%A6%BB</guid>
     <description>当肉体处于无聊的稳态，精神便开始抽离.</description>
     <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>insteresting ideas</title>
+    <link>https://fengjieli.top/ideas/</link>
+    <guid>https://fengjieli.top/ideas/</guid>
+    <description></description>
+    <pubDate>Mon, 10 Nov 2025 07:17:31 GMT</pubDate>
+  </item><item>
+    <title>research notes</title>
+    <link>https://fengjieli.top/research/</link>
+    <guid>https://fengjieli.top/research/</guid>
+    <description></description>
+    <pubDate>Mon, 10 Nov 2025 07:15:42 GMT</pubDate>
   </item><item>
     <title>纵有疾风起，人生不言弃——《强风吹拂》</title>
     <link>https://fengjieli.top/reading/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82</link>
@@ -47,24 +65,6 @@
     <guid>https://fengjieli.top/research/paper_reading</guid>
     <description>this blog organized by some interesting topics, each topic will be a link that has a list of papers.</description>
     <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>NJU-Software Analysis-DataFlow Analysis Foundations</title>
-    <link>https://fengjieli.top/research/softwareAnalysis04</link>
-    <guid>https://fengjieli.top/research/softwareAnalysis04</guid>
-    <description>NJU Software Analysis-DataFlow Analysis Foundations.</description>
-    <pubDate>Sun, 30 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>NJU-Software Analysis-DataFlow Analysis Application</title>
-    <link>https://fengjieli.top/research/softwareAnalysis03</link>
-    <guid>https://fengjieli.top/research/softwareAnalysis03</guid>
-    <description>NJU Software Analysis-DataFlow Analysis Application.</description>
-    <pubDate>Fri, 28 Mar 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Welcome!</title>
-    <link>https://fengjieli.top/</link>
-    <guid>https://fengjieli.top/</guid>
-    <description>I’m Fengjie Li (you can call me FFengJay as well). This is my personal wiki that I use to organize my notes, ideas and thoughts. About Research I’m a PostGraduate Student in Computer Science at Tianjin University, China.</description>
-    <pubDate>Thu, 27 Mar 2025 01:38:13 GMT</pubDate>
   </item>
     </channel>
   </rss>
