@@ -13,8 +13,7 @@ cssclasses:
 <a class="shell-host" href="/"><span>fengjie@wise</span>:~</a>
 <nav aria-label="Terminal shortcuts"><button type="button" data-command="about">/about</button><button type="button" data-command="research">/research</button><button type="button" data-command="publications">/publications</button><button type="button" data-command="kb">/kb</button><a href="https://github.com/Feng-Jay">github ↗</a></nav>
 </header>
-<section class="shell-output" id="terminal-output" aria-live="polite" aria-relevant="additions">
-<div class="shell-boot">
+<section class="shell-boot" aria-label="Welcome">
 <p class="shell-dim">Last login: now on web</p>
 <p><span class="shell-prompt">fengjie@wise:~$</span> ./welcome</p>
 <div class="shell-welcome">
@@ -23,19 +22,34 @@ cssclasses:
 <p>I build practical techniques for more reliable software with program analysis and large language models.</p>
 </div>
 <p class="shell-dim">Type <kbd>help</kbd> to explore, or use the shortcuts above. Tab completes commands.</p>
-</div>
 </section>
+<div class="shell-workspace">
 <form class="shell-command-line" autocomplete="off">
 <label for="shell-command"><span class="shell-prompt">fengjie@wise:~$</span></label>
 <input id="shell-command" name="command" type="text" inputmode="text" spellcheck="false" autofocus aria-describedby="shell-hint" />
 <button type="submit" aria-label="Run command">enter ↵</button>
 </form>
-<p class="shell-hint" id="shell-hint">Try: help · about · research · publications · education · kb · judgement · clear</p>
+<section class="shell-output" id="terminal-output" aria-label="Command output" aria-live="polite" aria-atomic="true">
+</section>
+</div>
+<p class="shell-hint" id="shell-hint">Try: ls · cat about.md · cd kb · ls research · cat research/paper_reading.md · open kb</p>
 </div>
 <div hidden data-terminal-template="help">
 <div class="shell-result shell-help">
-<p>Available commands:</p>
-<dl><div><dt>about</dt><dd>profile and contact links</dd></div><div><dt>research</dt><dd>current research focus</dd></div><div><dt>publications</dt><dd>publication list</dd></div><div><dt>education</dt><dd>academic background</dd></div><div><dt>interests</dt><dd>life beyond the lab</dd></div><div><dt>kb</dt><dd>knowledge base entrance</dd></div><div><dt>judgement</dt><dd>reviews and ratings</dd></div><div><dt>open kb</dt><dd>enter the Quartz knowledge base</dd></div><div><dt>open judgement</dt><dd>open My Judgement</dd></div><div><dt>github / scholar</dt><dd>external profiles</dd></div><div><dt>clear</dt><dd>clear this session</dd></div></dl>
+<h2>Terminal Manual</h2>
+<div class="shell-help-grid">
+<section><h3>NAVIGATE</h3><dl><div><dt>ls [path]</dt><dd>List a directory.</dd></div><div><dt>tree [path]</dt><dd>Show its tree.</dd></div><div><dt>cd &lt;dir&gt;</dt><dd>Change directory.</dd></div><div><dt>cd .. / cd ~</dt><dd>Go up / home.</dd></div><div><dt>pwd</dt><dd>Print current path.</dd></div></dl></section>
+<section><h3>READ &amp; OPEN</h3><dl><div><dt>cat &lt;file&gt;</dt><dd>Read a note here.</dd></div><div><dt>less &lt;file&gt;</dt><dd>Alias of cat.</dd></div><div><dt>open &lt;path&gt;</dt><dd>Open the full page.</dd></div><div><dt>clear</dt><dd>Clear output.</dd></div></dl><h3>SHORTCUTS</h3><p><b>about</b> · <b>research</b> · <b>publications</b> · <b>education</b> · <b>interests</b> · <b>kb</b> · <b>judgement</b></p></section>
+<section><h3>QUICK START</h3><pre class="shell-help-examples">ls
+cat publications.md
+cd kb
+ls ideas
+cat ideas/抽离.md
+cd research
+cat paper_reading.md
+open paper_reading.md</pre></section>
+</div>
+<p class="shell-dim">Tip: press Tab to complete commands and paths; use ↑ / ↓ to recall command history. Draft and empty notes are hidden.</p>
 </div>
 </div>
 <div hidden data-terminal-template="about">

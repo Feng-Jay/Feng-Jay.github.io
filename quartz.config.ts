@@ -17,7 +17,14 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "fengjieli.top",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: [
+      "private",
+      "templates",
+      ".obsidian",
+      "Users/**",
+      "任务/**",
+      "百科/**",
+    ],
     defaultDateType: "created",
     generateSocialImages: true,
     theme: {
