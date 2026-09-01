@@ -1,95 +1,76 @@
 ---
-title: About Fengjie Li
-description: Fengjie Li is a software engineering researcher working on automated program repair, program analysis, and large language models for code.
+title: Fengjie Li
+description: Fengjie Li is a Ph.D. student at the WISE Lab, Tianjin University, researching automated program repair, program analysis, and large language models for code.
 aliases:
   - about
 cssclasses:
-  - about-page
+  - shell-home
 ---
 
-<main class="cv-page" id="home">
-<div class="cv-terminal-bar"><span><i aria-hidden="true"></i> FENGJIE.LI</span><span>INTERACTIVE SHELL · ONLINE</span></div>
-<section class="cv-console" aria-label="Homepage command line">
-<div class="cv-console-log" aria-live="polite" aria-atomic="true">
-<p><span class="cv-prompt">fengjie@wise:~$</span> <span class="cv-boot-command">./welcome</span></p>
-<p class="cv-console-response" data-state="ready">Welcome. Type <b>help</b>, click a command, or press Tab to complete.</p>
-</div>
-<form class="cv-console-form" autocomplete="off">
-<label for="cv-command-input"><span class="cv-prompt">fengjie@wise:~$</span></label>
-<input id="cv-command-input" name="command" type="text" inputmode="text" spellcheck="false" placeholder="help" aria-describedby="cv-command-hint" />
-<button type="submit">RUN <span aria-hidden="true">↵</span></button>
-</form>
-<div class="cv-command-menu" id="cv-command-hint"><span>TRY:</span><button type="button" data-command="about">about</button><button type="button" data-command="publications">publications</button><button type="button" data-command="research">research</button><button type="button" data-command="kb">kb</button><button type="button" data-command="judgement">judgement</button><button type="button" data-command="help">help</button></div>
-</section>
-<header class="cv-header">
-<div class="cv-intro">
-<figure class="cv-photo"><img src="/static/fengjie-li.jpg" alt="Portrait of Fengjie Li" width="460" height="460" /></figure>
-<div class="cv-identity">
-<p class="cv-command"><span>&gt;</span> whoami</p>
-<h1>Fengjie Li</h1>
-<p class="cv-role">Software engineering researcher building practical tools for more reliable programs.</p>
-<div class="cv-mini-links"><a href="https://scholar.google.com/citations?user=btcwJ_EAAAAJ&amp;hl=en">SCHOLAR ↗</a><a href="https://github.com/Feng-Jay">GITHUB ↗</a></div>
-</div>
-</div>
-<dl class="cv-meta">
-<div><dt>LOCATION</dt><dd>Tianjin, China</dd></div>
-<div><dt>LAB</dt><dd>WISE @ Tianjin University</dd></div>
-<div><dt>FIELD</dt><dd>Software Engineering</dd></div>
-<div><dt>STATUS</dt><dd><span class="status-pixel" aria-hidden="true"></span> Ph.D. Student</dd></div>
-</dl>
+<main class="shell-page" id="home">
+<div class="shell-terminal">
+<header class="shell-topbar">
+<a class="shell-host" href="/"><span>fengjie@wise</span>:~</a>
+<nav aria-label="Terminal shortcuts"><button type="button" data-command="about">/about</button><button type="button" data-command="research">/research</button><button type="button" data-command="publications">/publications</button><button type="button" data-command="kb">/kb</button><a href="https://github.com/Feng-Jay">github ↗</a></nav>
 </header>
-<div class="cv-grid">
-<section class="cv-section cv-profile" aria-labelledby="profile-title">
-<h2 id="profile-title"><span>01</span> PROFILE</h2>
-<p>I am a Ph.D. student at the Wise Software Engineering Lab (WISE), Tianjin University. My research sits at the intersection of automated program repair, program analysis, and large language models for code—with an emphasis on fixes that are both effective and explainable.</p>
-</section>
-<section class="cv-section cv-education" aria-labelledby="education-title">
-<h2 id="education-title"><span>02</span> EDUCATION</h2>
-<ol class="cv-records">
-<li><div class="cv-record-top"><strong>Tianjin University</strong><span>PH.D. · SOFTWARE ENGINEERING</span></div><p>Wise Software Engineering Lab (WISE)</p></li>
-<li><div class="cv-record-top"><strong>Tianjin University</strong><span>M.S. · SOFTWARE ENGINEERING</span></div><p>Wise Software Engineering Lab (WISE)</p></li>
-<li><div class="cv-record-top"><strong>Tianjin University</strong><span>B.S. · COMPUTER SCIENCE</span></div><p>College of Intelligence and Computing</p></li>
-</ol>
-</section>
-<section class="cv-section cv-publications" aria-labelledby="publications-title">
-<h2 id="publications-title"><span>03</span> PUBLICATIONS</h2>
-<ol class="cv-pub-list">
-<li><span class="cv-pub-index">P.09</span><div><a href="https://doi.org/10.1145/3820049"><strong>Intent-Aware Defect Pattern Extraction from Singular Examples</strong></a><p>Jiachen Han, <b>Fengjie Li</b>, Jiajun Jiang, Ruihang Fan, Yingfei Xiong, Linjie Pan, Bilian Wang, Junjie Chen</p><small>ACM TOSEM · 2026 · ASE 2026 Journal-First</small></div></li>
-<li><span class="cv-pub-index">P.08</span><div><a href="https://xgdsmileboy.github.io/files/paper/apr26.pdf"><strong>AnchorRepair: A Reference-Guided Dual-Agent Framework for Code Translation Repair</strong></a><p>Jiajun Sun, Yaocai Zhao, <b>Fengjie Li</b>, Jiajun Jiang</p><small>International Workshop on Automated Program Repair · 2026</small></div></li>
-<li><span class="cv-pub-index">P.07</span><div><a href="https://arxiv.org/abs/2601.19239"><strong>LLM-based Vulnerability Detection at Project Scale: An Empirical Study</strong></a><p><b>Fengjie Li</b>, Jiajun Jiang, Dongchi Chen, Yingfei Xiong</p><small>arXiv preprint · 2026</small></div></li>
-<li><span class="cv-pub-index">P.06</span><div><a href="https://doi.org/10.1109/ICSME64153.2025.00018"><strong>Boosting Redundancy-Based Automated Program Repair by Fine-Grained Pattern Mining</strong></a><p>Jiajun Jiang, <b>Fengjie Li</b>, Zijie Zhao, Zhirui Ye, Mengjiao Liu, Bo Wang, Hongyu Zhang, Junjie Chen</p><small>ICSME 2025 · IEEE TCSE Distinguished Paper Award</small></div></li>
-<li><span class="cv-pub-index">P.05</span><div><a href="https://arxiv.org/abs/2506.17647"><strong>Improving Compiler Bug Isolation by Leveraging Large Language Models</strong></a><p>Yixian Qi, Jiajun Jiang, <b>Fengjie Li</b>, Bowen Chen, Hongyu Zhang, Junjie Chen</p><small>arXiv preprint · 2025</small></div></li>
-<li><span class="cv-pub-index">P.04</span><div><a href="https://arxiv.org/abs/2506.13186"><strong>Empirical Evaluation of Large Language Models in Automated Program Repair</strong></a><p>Jiajun Sun, <b>Fengjie Li</b>, Xinzhu Qi, Hongyu Zhang, Jiajun Jiang</p><small>arXiv preprint · 2025</small></div></li>
-<li><span class="cv-pub-index">P.03</span><div><a href="https://doi.org/10.1145/3715004"><strong>Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis</strong></a><p><b>Fengjie Li</b>, Jiajun Jiang, Jiajun Sun, Hongyu Zhang</p><small>ACM TOSEM · 2025 · FSE 2025 Journal-First</small></div></li>
-<li><span class="cv-pub-index">P.02</span><div><a href="https://doi.org/10.1109/ICSE-NIER66352.2025.00024"><strong>Evaluating the Generalizability of LLMs in Automated Program Repair</strong></a><p><b>Fengjie Li</b>, Jiajun Jiang, Jiajun Sun, Hongyu Zhang</p><small>ICSE-NIER · 2025</small></div></li>
-<li><span class="cv-pub-index">P.01</span><div><a href="https://doi.org/10.1145/3641848"><strong>Mapping APIs in Dynamic-typed Programs by Leveraging Transfer Learning</strong></a><p>Zhenfei Huang, Junjie Chen, Jiajun Jiang, Yihua Liang, Hanmo You, <b>Fengjie Li</b></p><small>ACM TOSEM · 2024 · FSE 2025 Journal-First</small></div></li>
-</ol>
-</section>
-<section class="cv-section cv-focus" aria-labelledby="focus-title">
-<h2 id="focus-title"><span>04</span> RESEARCH FOCUS</h2>
-<p>I study how program analysis and large language models can work together to make automated program repair, vulnerability detection, and software debugging more reliable, generalizable, and useful in practice.</p>
-</section>
-<section class="cv-section cv-reading" aria-labelledby="reading-title">
-<h2 id="reading-title"><span>05</span> BEYOND THE LAB</h2>
-<p>Philosophy, history, psychology, fiction, and running.</p>
-<div class="cv-tags" aria-label="Reading interests"><span>CAMUS</span><span>HESSE</span><span>MING HISTORY</span><span>RUNNING</span></div>
-</section>
+<section class="shell-output" id="terminal-output" aria-live="polite" aria-relevant="additions">
+<div class="shell-boot">
+<p class="shell-dim">Last login: now on web</p>
+<p><span class="shell-prompt">fengjie@wise:~$</span> ./welcome</p>
+<div class="shell-welcome">
+<h1>Fengjie Li</h1>
+<p>Ph.D. Student @ WISE Lab, Tianjin University</p>
+<p>I build practical techniques for more reliable software with program analysis and large language models.</p>
 </div>
-<section class="cv-kb" aria-labelledby="kb-title">
-<div>
-<p class="cv-command"><span>$</span> open ./knowledge_base</p>
-<h2 id="kb-title">Notes are part of the work.</h2>
-<p>Research logs, reading notes, and unfinished thoughts—kept as a connected Quartz garden.</p>
+<p class="shell-dim">Type <kbd>help</kbd> to explore, or use the shortcuts above. Tab completes commands.</p>
 </div>
-<a href="/kb">ENTER /KB <span aria-hidden="true">→</span></a>
 </section>
-<section class="cv-kb cv-judgement" aria-labelledby="judgement-title">
-<div>
-<p class="cv-command"><span>$</span> open ./my_judgement</p>
-<h2 id="judgement-title">My taste, scored and remembered.</h2>
-<p>Subjective reviews of games, films, TV shows, and books—with scores, short verdicts, and room for discussion.</p>
+<form class="shell-command-line" autocomplete="off">
+<label for="shell-command"><span class="shell-prompt">fengjie@wise:~$</span></label>
+<input id="shell-command" name="command" type="text" inputmode="text" spellcheck="false" autofocus aria-describedby="shell-hint" />
+<button type="submit" aria-label="Run command">enter ↵</button>
+</form>
+<p class="shell-hint" id="shell-hint">Try: help · about · research · publications · education · kb · judgement · clear</p>
 </div>
-<a href="https://feng-jay.github.io/my-judgement/">OPEN /JUDGEMENT <span aria-hidden="true">↗</span></a>
-</section>
-<footer class="cv-footer"><span>FFENGJAY © 2026</span><span>GO WITH THE FLOW_</span></footer>
+<div hidden data-terminal-template="help">
+<div class="shell-result shell-help">
+<p>Available commands:</p>
+<dl><div><dt>about</dt><dd>profile and contact links</dd></div><div><dt>research</dt><dd>current research focus</dd></div><div><dt>publications</dt><dd>publication list</dd></div><div><dt>education</dt><dd>academic background</dd></div><div><dt>interests</dt><dd>life beyond the lab</dd></div><div><dt>kb</dt><dd>knowledge base entrance</dd></div><div><dt>judgement</dt><dd>reviews and ratings</dd></div><div><dt>open kb</dt><dd>enter the Quartz knowledge base</dd></div><div><dt>open judgement</dt><dd>open My Judgement</dd></div><div><dt>github / scholar</dt><dd>external profiles</dd></div><div><dt>clear</dt><dd>clear this session</dd></div></dl>
+</div>
+</div>
+<div hidden data-terminal-template="about">
+<div class="shell-result shell-about">
+<img src="/static/fengjie-li.jpg" alt="Portrait of Fengjie Li" width="460" height="460" />
+<div><h2>Fengjie Li</h2><p>Software engineering researcher and Ph.D. student at the Wise Software Engineering Lab (WISE), Tianjin University.</p><p>My work sits at the intersection of automated program repair, program analysis, and large language models for code—with an emphasis on fixes that are effective, reliable, and explainable.</p><p class="shell-links"><a href="https://scholar.google.com/citations?user=btcwJ_EAAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://github.com/Feng-Jay">GitHub ↗</a></p></div>
+</div>
+</div>
+<div hidden data-terminal-template="research">
+<div class="shell-result"><h2>Research Focus</h2><p>I study how program analysis and large language models can work together to make automated program repair, vulnerability detection, and software debugging more reliable, generalizable, and useful in practice.</p><ul class="shell-tags"><li>Automated Program Repair</li><li>Program Analysis</li><li>LLMs for Code</li><li>Vulnerability Detection</li></ul></div>
+</div>
+<div hidden data-terminal-template="education">
+<div class="shell-result"><h2>Education</h2><ol class="shell-timeline"><li><span>NOW</span><div><strong>Ph.D. · Software Engineering</strong><p>Tianjin University · WISE Lab</p></div></li><li><span>M.S.</span><div><strong>Software Engineering</strong><p>Tianjin University · WISE Lab</p></div></li><li><span>B.S.</span><div><strong>Computer Science</strong><p>Tianjin University · College of Intelligence and Computing</p></div></li></ol></div>
+</div>
+<div hidden data-terminal-template="interests">
+<div class="shell-result"><h2>Beyond the Lab</h2><p>Philosophy, history, psychology, fiction, and running.</p><ul class="shell-tags"><li>Camus</li><li>Hesse</li><li>Ming History</li><li>Running</li></ul></div>
+</div>
+<div hidden data-terminal-template="publications">
+<div class="shell-result"><h2>Publications</h2><ol class="shell-publications">
+<li><span>2026</span><div><a href="https://doi.org/10.1145/3820049"><strong>Intent-Aware Defect Pattern Extraction from Singular Examples</strong></a><p>Jiachen Han, <b>Fengjie Li</b>, Jiajun Jiang, Ruihang Fan, Yingfei Xiong, Linjie Pan, Bilian Wang, Junjie Chen</p><small>ACM TOSEM · ASE 2026 Journal-First</small></div></li>
+<li><span>2026</span><div><a href="https://xgdsmileboy.github.io/files/paper/apr26.pdf"><strong>AnchorRepair: A Reference-Guided Dual-Agent Framework for Code Translation Repair</strong></a><p>Jiajun Sun, Yaocai Zhao, <b>Fengjie Li</b>, Jiajun Jiang</p><small>International Workshop on Automated Program Repair</small></div></li>
+<li><span>2026</span><div><a href="https://arxiv.org/abs/2601.19239"><strong>LLM-based Vulnerability Detection at Project Scale: An Empirical Study</strong></a><p><b>Fengjie Li</b>, Jiajun Jiang, Dongchi Chen, Yingfei Xiong</p><small>arXiv preprint</small></div></li>
+<li><span>2025</span><div><a href="https://doi.org/10.1109/ICSME64153.2025.00018"><strong>Boosting Redundancy-Based Automated Program Repair by Fine-Grained Pattern Mining</strong></a><p>Jiajun Jiang, <b>Fengjie Li</b>, Zijie Zhao, Zhirui Ye, Mengjiao Liu, Bo Wang, Hongyu Zhang, Junjie Chen</p><small>ICSME · IEEE TCSE Distinguished Paper Award</small></div></li>
+<li><span>2025</span><div><a href="https://arxiv.org/abs/2506.17647"><strong>Improving Compiler Bug Isolation by Leveraging Large Language Models</strong></a><p>Yixian Qi, Jiajun Jiang, <b>Fengjie Li</b>, Bowen Chen, Hongyu Zhang, Junjie Chen</p><small>arXiv preprint</small></div></li>
+<li><span>2025</span><div><a href="https://arxiv.org/abs/2506.13186"><strong>Empirical Evaluation of Large Language Models in Automated Program Repair</strong></a><p>Jiajun Sun, <b>Fengjie Li</b>, Xinzhu Qi, Hongyu Zhang, Jiajun Jiang</p><small>arXiv preprint</small></div></li>
+<li><span>2025</span><div><a href="https://doi.org/10.1145/3715004"><strong>Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis</strong></a><p><b>Fengjie Li</b>, Jiajun Jiang, Jiajun Sun, Hongyu Zhang</p><small>ACM TOSEM · FSE 2025 Journal-First</small></div></li>
+<li><span>2025</span><div><a href="https://doi.org/10.1109/ICSE-NIER66352.2025.00024"><strong>Evaluating the Generalizability of LLMs in Automated Program Repair</strong></a><p><b>Fengjie Li</b>, Jiajun Jiang, Jiajun Sun, Hongyu Zhang</p><small>ICSE-NIER</small></div></li>
+<li><span>2024</span><div><a href="https://doi.org/10.1145/3641848"><strong>Mapping APIs in Dynamic-typed Programs by Leveraging Transfer Learning</strong></a><p>Zhenfei Huang, Junjie Chen, Jiajun Jiang, Yihua Liang, Hanmo You, <b>Fengjie Li</b></p><small>ACM TOSEM · FSE 2025 Journal-First</small></div></li>
+</ol></div>
+</div>
+<div hidden data-terminal-template="kb">
+<div class="shell-result shell-portal"><p class="shell-path">~/knowledge-base</p><h2>Quartz Knowledge Base</h2><p>Research logs, reading notes, and unfinished thoughts kept as a connected digital garden.</p><a href="/kb">enter /kb →</a><p class="shell-dim">Tip: run <b>open kb</b> to enter directly.</p></div>
+</div>
+<div hidden data-terminal-template="judgement">
+<div class="shell-result shell-portal"><p class="shell-path">~/my-judgement</p><h2>My Judgement</h2><p>Subjective reviews of games, films, TV shows, and books—with scores and short verdicts.</p><a href="https://feng-jay.github.io/my-judgement/">open /judgement ↗</a><p class="shell-dim">Tip: run <b>open judgement</b> to enter directly.</p></div>
+</div>
+<noscript><p class="shell-noscript">JavaScript is disabled. Visit <a href="/kb">the knowledge base</a>, <a href="https://github.com/Feng-Jay">GitHub</a>, or <a href="https://scholar.google.com/citations?user=btcwJ_EAAAAJ&amp;hl=en">Google Scholar</a>.</p></noscript>
 </main>

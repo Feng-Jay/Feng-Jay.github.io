@@ -1,131 +1,133 @@
-const terminalCommands = [
+const shellCommands = [
   "help",
   "about",
-  "education",
-  "publications",
   "research",
+  "publications",
+  "education",
   "interests",
   "kb",
   "judgement",
-  "top",
   "open kb",
   "open judgement",
   "github",
   "scholar",
+  "pwd",
+  "whoami",
   "clear",
 ]
 
-const terminalTargets: Record<string, string> = {
-  about: "profile-title",
-  profile: "profile-title",
-  whoami: "profile-title",
-  education: "education-title",
-  edu: "education-title",
-  publications: "publications-title",
-  publication: "publications-title",
-  pubs: "publications-title",
-  research: "focus-title",
-  focus: "focus-title",
-  interests: "reading-title",
-  reading: "reading-title",
-  kb: "kb-title",
-  notes: "kb-title",
-  judgement: "judgement-title",
-  judgment: "judgement-title",
-  top: "home",
-  home: "home",
+const shellAliases: Record<string, string> = {
+  ls: "help",
+  profile: "about",
+  whoami: "about",
+  focus: "research",
+  pubs: "publications",
+  publication: "publications",
+  edu: "education",
+  reading: "interests",
+  notes: "kb",
+  judgment: "judgement",
 }
 
-function normalizeTerminalCommand(value: string) {
+function normalizeShellCommand(value: string) {
   return value.trim().toLowerCase().replace(/^\/+/, "").replace(/\s+/g, " ")
 }
 
 function setupHomeTerminal() {
-  const form = document.querySelector<HTMLFormElement>(".cv-console-form")
-  if (!form) return
+  const form = document.querySelector<HTMLFormElement>(".shell-command-line")
+  const output = document.querySelector<HTMLElement>("#terminal-output")
+  const input = form?.querySelector<HTMLInputElement>("#shell-command")
+  if (!form || !output || !input) return
 
-  const input = form.querySelector<HTMLInputElement>("#cv-command-input")
-  const response = document.querySelector<HTMLElement>(".cv-console-response")
-  const commandButtons = document.querySelectorAll<HTMLButtonElement>(".cv-command-menu [data-command]")
-  if (!input || !response) return
-
-  const commandHistory: string[] = []
+  const commandButtons = document.querySelectorAll<HTMLButtonElement>("[data-command]")
+  const history: string[] = []
   let historyIndex = 0
 
-  function writeResponse(message: string, state = "ready") {
-    response.textContent = message
-    response.dataset.state = state
+  function promptLine(command: string) {
+    const line = document.createElement("p")
+    line.className = "shell-echo"
+    const prompt = document.createElement("span")
+    prompt.className = "shell-prompt"
+    prompt.textContent = "fengjie@wise:~$"
+    line.append(prompt, document.createTextNode(` ${command}`))
+    return line
   }
 
-  function jumpTo(targetId: string, label: string) {
-    const target = document.getElementById(targetId)
-    if (!target) {
-      writeResponse(`Section not found: ${label}`, "error")
+  function appendTextResult(command: string, message: string, state = "normal") {
+    const entry = document.createElement("div")
+    entry.className = "shell-entry"
+    entry.append(promptLine(command))
+    const result = document.createElement("p")
+    result.className = `shell-message shell-message-${state}`
+    result.textContent = message
+    entry.append(result)
+    output.append(entry)
+    entry.scrollIntoView({ block: "nearest" })
+  }
+
+  function appendTemplateResult(command: string, templateName: string) {
+    const template = document.querySelector<HTMLElement>(
+      `[data-terminal-template="${templateName}"]`,
+    )
+    const result = template?.firstElementChild?.cloneNode(true)
+    if (!result) {
+      appendTextResult(command, `missing output: ${templateName}`, "error")
       return
     }
 
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" })
-    window.history.replaceState(null, "", targetId === "home" ? window.location.pathname : `#${targetId}`)
-    writeResponse(`Jumped to ./${label}`, "success")
+    const entry = document.createElement("div")
+    entry.className = "shell-entry"
+    entry.append(promptLine(command), result)
+    output.append(entry)
+    entry.scrollIntoView({ block: "nearest" })
   }
 
   function runCommand(rawCommand: string) {
-    const command = normalizeTerminalCommand(rawCommand)
-    if (!command) {
-      writeResponse("Enter a command, or type help to see the command list.", "error")
+    const command = normalizeShellCommand(rawCommand)
+    if (!command) return
+
+    history.push(command)
+    historyIndex = history.length
+    const canonical = shellAliases[command] ?? command
+
+    if (canonical === "clear") {
+      output.replaceChildren()
       return
     }
 
-    commandHistory.push(command)
-    historyIndex = commandHistory.length
-
-    if (command === "help" || command === "ls") {
-      writeResponse(
-        "about · education · publications · research · interests · kb · judgement · top · open kb · open judgement · github · scholar · clear",
-      )
+    if (canonical === "pwd") {
+      appendTextResult(command, "/home/fengjie", "success")
       return
     }
 
-    if (command === "pwd") {
-      writeResponse("/home/fengjie", "success")
-      return
-    }
-
-    if (command === "clear") {
-      writeResponse("")
-      return
-    }
-
-    if (command === "open kb") {
-      writeResponse("Opening the Quartz knowledge base…", "success")
+    if (canonical === "open kb") {
+      appendTextResult(command, "Opening ~/knowledge-base…", "success")
       window.location.assign("/kb")
       return
     }
 
-    if (command === "open judgement" || command === "open judgment") {
-      writeResponse("Opening My Judgement…", "success")
+    if (canonical === "open judgement" || canonical === "open judgment") {
+      appendTextResult(command, "Opening ~/my-judgement…", "success")
       window.location.assign("https://feng-jay.github.io/my-judgement/")
       return
     }
 
-    if (command === "github" || command === "open github") {
+    if (canonical === "github" || canonical === "open github") {
       window.location.assign("https://github.com/Feng-Jay")
       return
     }
 
-    if (command === "scholar" || command === "open scholar") {
+    if (canonical === "scholar" || canonical === "open scholar") {
       window.location.assign("https://scholar.google.com/citations?user=btcwJ_EAAAAJ&hl=en")
       return
     }
 
-    const targetId = terminalTargets[command]
-    if (targetId) {
-      jumpTo(targetId, command)
+    if (shellCommands.includes(canonical)) {
+      appendTemplateResult(command, canonical)
       return
     }
 
-    writeResponse(`command not found: ${command}. Type help to list commands.`, "error")
+    appendTextResult(command, `command not found: ${command}. Type help to list commands.`, "error")
   }
 
   function onSubmit(event: SubmitEvent) {
@@ -137,30 +139,33 @@ function setupHomeTerminal() {
 
   function onKeyDown(event: KeyboardEvent) {
     if (event.key === "Tab") {
-      const partial = normalizeTerminalCommand(input.value)
+      const partial = normalizeShellCommand(input.value)
       if (!partial) return
-      const matches = terminalCommands.filter((command) => command.startsWith(partial))
+      const matches = shellCommands.filter((command) => command.startsWith(partial))
       if (matches.length > 0) {
         event.preventDefault()
         input.value = matches[0]
         input.setSelectionRange(input.value.length, input.value.length)
-        if (matches.length > 1) writeResponse(`Matches: ${matches.join(" · ")}`)
+        if (matches.length > 1) {
+          appendTextResult(partial, `matches: ${matches.join("  ")}`)
+        }
       }
       return
     }
 
     if (event.key === "ArrowUp") {
-      if (commandHistory.length === 0) return
+      if (history.length === 0) return
       event.preventDefault()
       historyIndex = Math.max(0, historyIndex - 1)
-      input.value = commandHistory[historyIndex]
+      input.value = history[historyIndex]
+      input.setSelectionRange(input.value.length, input.value.length)
     }
 
     if (event.key === "ArrowDown") {
-      if (commandHistory.length === 0) return
+      if (history.length === 0) return
       event.preventDefault()
-      historyIndex = Math.min(commandHistory.length, historyIndex + 1)
-      input.value = historyIndex === commandHistory.length ? "" : commandHistory[historyIndex]
+      historyIndex = Math.min(history.length, historyIndex + 1)
+      input.value = historyIndex === history.length ? "" : history[historyIndex]
     }
   }
 
@@ -168,9 +173,8 @@ function setupHomeTerminal() {
     const button = event.currentTarget as HTMLButtonElement
     const command = button.dataset.command
     if (!command) return
-    input.value = command
     runCommand(command)
-    input.value = ""
+    input.focus({ preventScroll: true })
   }
 
   form.addEventListener("submit", onSubmit)
