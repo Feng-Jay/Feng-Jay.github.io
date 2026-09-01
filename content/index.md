@@ -7,8 +7,20 @@ cssclasses:
   - about-page
 ---
 
-<main class="cv-page">
-<div class="cv-terminal-bar"><span><i aria-hidden="true"></i> FENGJIE.LI</span><span>/INDEX.HTML</span></div>
+<main class="cv-page" id="home">
+<div class="cv-terminal-bar"><span><i aria-hidden="true"></i> FENGJIE.LI</span><span>INTERACTIVE SHELL · ONLINE</span></div>
+<section class="cv-console" aria-label="Homepage command line">
+<div class="cv-console-log" aria-live="polite" aria-atomic="true">
+<p><span class="cv-prompt">fengjie@wise:~$</span> <span class="cv-boot-command">./welcome</span></p>
+<p class="cv-console-response" data-state="ready">Welcome. Type <b>help</b>, click a command, or press Tab to complete.</p>
+</div>
+<form class="cv-console-form" autocomplete="off">
+<label for="cv-command-input"><span class="cv-prompt">fengjie@wise:~$</span></label>
+<input id="cv-command-input" name="command" type="text" inputmode="text" spellcheck="false" placeholder="help" aria-describedby="cv-command-hint" />
+<button type="submit">RUN <span aria-hidden="true">↵</span></button>
+</form>
+<div class="cv-command-menu" id="cv-command-hint"><span>TRY:</span><button type="button" data-command="about">about</button><button type="button" data-command="publications">publications</button><button type="button" data-command="research">research</button><button type="button" data-command="kb">kb</button><button type="button" data-command="judgement">judgement</button><button type="button" data-command="help">help</button></div>
+</section>
 <header class="cv-header">
 <div class="cv-intro">
 <figure class="cv-photo"><img src="/static/fengjie-li.jpg" alt="Portrait of Fengjie Li" width="460" height="460" /></figure>
