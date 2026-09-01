@@ -71,5 +71,13 @@ cssclasses:
 </div>
 <a href="/kb">ENTER /KB <span aria-hidden="true">→</span></a>
 </section>
+<section class="cv-kb cv-judgement" aria-labelledby="judgement-title">
+<div>
+<p class="cv-command"><span>$</span> open ./my_judgement</p>
+<h2 id="judgement-title">My taste, scored and remembered.</h2>
+<p>Subjective reviews of games, films, TV shows, and books—with scores, short verdicts, and room for discussion.</p>
+</div>
+<a href="https://feng-jay.github.io/my-judgement/">OPEN /JUDGEMENT <span aria-hidden="true">↗</span></a>
+</section>
 <footer class="cv-footer"><span>FFENGJAY © 2026</span><span>GO WITH THE FLOW_</span></footer>
 </main>

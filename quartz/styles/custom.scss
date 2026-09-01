@@ -559,6 +559,32 @@ body[data-slug="index"] .page > #quartz-body > .center > article.about-page {
   color: var(--cv-ink) !important;
 }
 
+.cv-judgement {
+  border-top: 1px solid var(--cv-ink);
+  background: var(--cv-red);
+}
+
+.cv-judgement .cv-command {
+  color: #ffe6df;
+}
+
+.cv-judgement .cv-command span {
+  color: var(--cv-yellow);
+}
+
+.cv-judgement p:last-child {
+  color: #fff2ec;
+}
+
+.cv-page .cv-judgement > a {
+  border-color: var(--cv-ink);
+}
+
+.cv-page .cv-judgement > a:hover {
+  background: var(--cv-ink);
+  color: var(--cv-paper) !important;
+}
+
 .cv-footer {
   display: flex;
   justify-content: space-between;
