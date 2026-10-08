@@ -454,6 +454,10 @@ pre {
       }
     }
 
+    &[data-hide-line-numbers] > [data-line]::before {
+      content: none;
+    }
+
     &[data-line-numbers-max-digits="2"] > [data-line]::before {
       width: 2rem;
     }

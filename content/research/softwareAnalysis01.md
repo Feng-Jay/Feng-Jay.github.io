@@ -2,7 +2,7 @@
 title: NJU-Software Analysis-Introduction
 draft: false
 tags:
-  - Program Analysis
+  - ProgramAnalysis
 description: NJU Software Analysis-Introduction
 date: 2025-03-26
 ---

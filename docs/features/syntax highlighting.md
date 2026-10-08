@@ -107,7 +107,15 @@ This is an array `[1, 2, 3]{:js}` of numbers 1 through 3.
 
 ### Line numbers
 
-Syntax highlighting has line numbers configured automatically. If you want to start line numbers at a specific number, use `showLineNumbers{number}`:
+Syntax highlighting has line numbers configured automatically. To hide them for an individual code block, add `hideLineNumbers` after the language:
+
+````
+```md hideLineNumbers
+This block has no line numbers.
+```
+````
+
+Omit `hideLineNumbers` to show line numbers again. If you want to start line numbers at a specific number, use `showLineNumbers{number}`:
 
 ````
 ```js showLineNumbers{number}

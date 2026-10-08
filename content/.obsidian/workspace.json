@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0fc76d69b1eb5ba9",
+        "id": "624d2ad4968a9527",
         "type": "tabs",
         "children": [
           {
-            "id": "15cd76195b114c10",
+            "id": "4d53a96fcf42f87d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "百科/Intro.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Intro"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -49,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:ProgramAnalysis",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 290.13671875
   },
   "right": {
     "id": "68fce5390236b99a",
@@ -90,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "百科/TSE26-论文的反馈意见.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +106,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "TSE26-论文的反馈意见 的反向链接列表"
             }
           },
           {
@@ -108,12 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reading/明朝那些事.md",
+                "file": "百科/TSE26-论文的反馈意见.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "明朝那些事 的出链列表"
+              "title": "TSE26-论文的反馈意见 的出链列表"
             }
           },
           {
@@ -137,24 +144,26 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reading/明朝那些事.md",
+                "file": "百科/盲人摸象版理解Codex-001-AGENTS.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "明朝那些事 的大纲"
+              "title": "盲人摸象版理解Codex-001-AGENTS.md 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -163,25 +172,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "15cd76195b114c10",
+  "active": "fbe361f8020d6c22",
   "lastOpenFiles": [
+    "research/TSE1.md",
+    "百科/Reduction-SE开发流程.md",
+    "百科/Intro.md",
+    "百科/SAILOR-Cases.md",
+    "images/Reduction-SE开发流程W53.png",
+    "images/Reduction-SE开发流程W52.png",
+    "images/Reduction-SE开发流程W51.png",
+    "未命名.base",
+    "images/Reduction-SE开发流程W46.png",
+    "images/Reduction-SE开发流程w45-1.png",
+    "images/Reduction-SE开发流程w45.png",
+    "images/Reduction-SE开发流程W44.png",
+    "images/Reduction-SE开发流程w43.png",
+    "images/Reduction-SE开发流程w41-1.png",
+    "images/Reduction-SE开发流程w41.png",
+    "kb.md",
+    "未命名 3.base",
+    "未命名 2.base",
+    "未命名 1.base",
+    "images/~$g_output 1.dot",
+    "images/cfg_output 1.dot",
+    "images/~$g_output.dot",
+    "images/cfg_output.dot",
     "index.md",
+    "about.md",
+    "百科/盲人摸象版理解Codex-001-AGENTS.md.md",
+    "任务/盲人摸象版理解Codex框架.md",
+    "百科/回顾CodeQL报警的NPD vuls.md",
+    "().md",
+    "任务/主线任务A-关于研究课题的选择.md",
+    "任务/主线任务C-修改TSE论文.md",
+    "任务/创作游戏mod.md",
+    "百科/TSE26-论文的反馈意见.md",
+    "百科/BugLens.md",
+    "百科/LLM4PFA.md",
+    "ideas/精神分析一则.md",
+    "Users/ffengjay/Postgraduate/Prepare4Phd/LLM4Security/results/claudecode_in_house_without_localization/linux-a53046291020ec41e09181396c1e829287b48d47-CWE-476/report.txt.md",
+    "Users/ffengjay/Postgraduate/Prepare4Phd/LLM4Security/results/claudecode_in_house_without_localization/linux-a53046291020ec41e09181396c1e829287b48d47-CWE-476",
+    "Users/ffengjay/Postgraduate/Prepare4Phd/LLM4Security/results/claudecode_in_house_without_localization",
+    "任务/主线任务A1-探索FP-Filtering.md",
+    "research/Investigation about concolic execution for vul detection.md",
+    "research/softwareAnalysis04.md",
     "ideas/index.md",
     "ideas/testTime&lifethinking.md",
-    "research/two_pointer.md",
-    "research/softwareAnalysis05.md",
-    "research/paper_syntactic_llm.md",
-    "research/softwareAnalysis01.md",
-    "research/paper_reading.md",
-    "research/index.md",
-    "research/hash.md",
-    "reading/明朝那些事.md",
-    "reading/强风吹拂.md",
-    "reading/人生的一些课题.md",
-    "reading/index.md",
-    "research/softwareAnalysis04.md",
-    "research/softwareAnalysis03.md",
-    "research/softwareAnalysis02.md",
-    "research/softwareAnalysis0.md"
+    "ideas/个人价值与锚定.md",
+    "ideas/抽离.md"
   ]
 }

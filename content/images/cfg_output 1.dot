@@ -1,0 +1,228 @@
+digraph source_cfg {
+  node [shape=box, style="rounded,filled", fillcolor="#fffde7"];
+  b0 [label="B0 [EXIT]
+"];
+  b1 [label="B1 [ENTRY]
+"];
+  b2 [label="B2
+[cond] identifier: reset
+"];
+  b3 [label="B3
+[decl] declaration: int rv = 0, reset = 0;
+[decl] declaration: int i, j;
+[decl] declaration: unsigned char pad[HMAC_MAX_MD_CBLOCK_SIZE];
+[decl] declaration: unsigned int keytmp_length;
+[decl] declaration: unsigned char keytmp[HMAC_MAX_MD_CBLOCK_SIZE];
+[cond] binary_expression: md != NULL
+"];
+  b4 [label="B4
+[stmt] return_statement: return 0;
+"];
+  b5 [label="B5
+[cond] binary_expression: md != NULL
+"];
+  b6 [label="B6
+[cond] binary_expression: md != ctx->md
+"];
+  b7 [label="B7
+[cond] binary_expression: key == NULL
+"];
+  b8 [label="B8
+[cond] binary_expression: len < 0
+"];
+  b9 [label="B9
+[stmt] assignment_expression: ctx->md = md
+"];
+  b10 [label="B10
+[stmt] assignment_expression: md = ctx->md
+"];
+  b11 [label="B11
+[stmt] return_statement: return 0;
+"];
+  b12 [label="B12
+[cond] binary_expression: ctx->md != NULL
+"];
+  b13 [label="B13
+[stmt] return_statement: return 0;
+"];
+  b14 [label="B14
+[cond] binary_expression: key != NULL
+"];
+  b15 [label="B15
+[cond] call_expression: EVP_MD_xof(md)
+"];
+  b16 [label="B16
+[stmt] assignment_expression: reset = 1
+[stmt] assignment_expression: j = EVP_MD_get_block_size(md)
+[cond] unary_expression: !ossl_assert(j <= (int)sizeof(keytmp))
+"];
+  b17 [label="B17
+[stmt] return_statement: return 0;
+"];
+  b18 [label="B18
+[cond] binary_expression: j < 0
+"];
+  b19 [label="B19
+[stmt] return_statement: return 0;
+"];
+  b20 [label="B20
+[cond] binary_expression: j < len
+"];
+  b21 [label="B21
+[stmt] return_statement: return 0;
+"];
+  b22 [label="B22
+[cond] unary_expression: !EVP_DigestInit_ex(ctx->md_ctx, md, impl)
+"];
+  b23 [label="B23
+[cond] unary_expression: !EVP_DigestUpdate(ctx->md_ctx, key, len)
+"];
+  b24 [label="B24
+[cond] unary_expression: !EVP_DigestFinal_ex(ctx->md_ctx, keytmp,                     &keytmp_length)
+"];
+  b25 [label="B25
+[stmt] return_statement: return 0;
+"];
+  b26 [label="B26
+[stmt] call_expression: memcpy(keytmp, key, len)
+[stmt] assignment_expression: keytmp_length = len
+"];
+  b27 [label="B27
+[cond] binary_expression: len < 0
+"];
+  b28 [label="B28
+[cond] binary_expression: len > (int)sizeof(keytmp)
+"];
+  b29 [label="B29
+[stmt] call_expression: memset(&keytmp[keytmp_length], 0,                 HMAC_MAX_MD_CBLOCK_SIZE - keytmp_length)
+"];
+  b30 [label="B30
+[stmt] assignment_expression: i = 0
+"];
+  b31 [label="B31
+[cond] binary_expression: keytmp_length != HMAC_MAX_MD_CBLOCK_SIZE
+"];
+  b32 [label="B32
+[cond] binary_expression: i < HMAC_MAX_MD_CBLOCK_SIZE
+"];
+  b33 [label="B33
+[cond] unary_expression: !EVP_DigestInit_ex(ctx->i_ctx, md, impl)
+"];
+  b34 [label="B34
+[stmt] assignment_expression: pad[i] = 0x36 ^ keytmp[i]
+[stmt] update_expression: i++
+"];
+  b35 [label="B35
+<goto>
+"];
+  b36 [label="B36
+[stmt] assignment_expression: i = 0
+"];
+  b37 [label="B37
+[cond] unary_expression: !EVP_DigestUpdate(ctx->i_ctx, pad,                 EVP_MD_get_block_size(md))
+"];
+  b38 [label="B38
+[cond] binary_expression: i < HMAC_MAX_MD_CBLOCK_SIZE
+"];
+  b39 [label="B39
+[cond] unary_expression: !EVP_DigestInit_ex(ctx->o_ctx, md, impl)
+"];
+  b40 [label="B40
+[stmt] assignment_expression: pad[i] = 0x5c ^ keytmp[i]
+[stmt] update_expression: i++
+"];
+  b41 [label="B41
+<goto>
+"];
+  b42 [label="B42
+[cond] unary_expression: !EVP_DigestUpdate(ctx->o_ctx, pad,                 EVP_MD_get_block_size(md))
+"];
+  b43 [label="B43
+[cond] unary_expression: !EVP_MD_CTX_copy_ex(ctx->md_ctx, ctx->i_ctx)
+"];
+  b44 [label="B44
+<goto>
+"];
+  b45 [label="B45
+[stmt] assignment_expression: rv = 1
+"];
+  b46 [label="B46
+[stmt] call_expression: OPENSSL_cleanse(keytmp, sizeof(keytmp))
+[stmt] call_expression: OPENSSL_cleanse(pad, sizeof(pad))
+"];
+  b47 [label="B47
+[stmt] return_statement: return rv;
+"];
+  b1 -> b3 [label="unconditional"];
+  b2 -> b46 [label="true"];
+  b2 -> b47 [label="false"];
+  b3 -> b6 [label="evaluate_rhs_true"];
+  b3 -> b5 [label="short_circuit_false"];
+  b4 -> b0 [label="return"];
+  b5 -> b9 [label="true"];
+  b5 -> b12 [label="false"];
+  b6 -> b7 [label="evaluate_rhs_true"];
+  b6 -> b5 [label="short_circuit_false"];
+  b7 -> b8 [label="evaluate_rhs_false"];
+  b7 -> b4 [label="short_circuit_true"];
+  b8 -> b4 [label="true"];
+  b8 -> b5 [label="false"];
+  b9 -> b15 [label="unconditional"];
+  b10 -> b15 [label="unconditional"];
+  b11 -> b0 [label="return"];
+  b12 -> b10 [label="true"];
+  b12 -> b11 [label="false"];
+  b13 -> b0 [label="return"];
+  b14 -> b16 [label="true"];
+  b14 -> b43 [label="false"];
+  b15 -> b13 [label="true"];
+  b15 -> b14 [label="false"];
+  b16 -> b17 [label="true"];
+  b16 -> b18 [label="false"];
+  b17 -> b0 [label="return"];
+  b18 -> b19 [label="true"];
+  b18 -> b20 [label="false"];
+  b19 -> b0 [label="return"];
+  b20 -> b22 [label="true"];
+  b20 -> b27 [label="false"];
+  b21 -> b0 [label="return"];
+  b22 -> b23 [label="evaluate_rhs_false"];
+  b22 -> b21 [label="short_circuit_true"];
+  b23 -> b24 [label="evaluate_rhs_false"];
+  b23 -> b21 [label="short_circuit_true"];
+  b24 -> b21 [label="true"];
+  b24 -> b31 [label="false"];
+  b25 -> b0 [label="return"];
+  b26 -> b31 [label="unconditional"];
+  b27 -> b28 [label="evaluate_rhs_false"];
+  b27 -> b25 [label="short_circuit_true"];
+  b28 -> b25 [label="true"];
+  b28 -> b26 [label="false"];
+  b29 -> b30 [label="unconditional"];
+  b30 -> b32 [label="unconditional"];
+  b31 -> b29 [label="true"];
+  b31 -> b30 [label="false"];
+  b32 -> b34 [label="loop_body"];
+  b32 -> b33 [label="loop_exit"];
+  b33 -> b37 [label="evaluate_rhs_false"];
+  b33 -> b35 [label="short_circuit_true"];
+  b34 -> b32 [label="unconditional"];
+  b35 -> b2 [label="goto"];
+  b36 -> b38 [label="unconditional"];
+  b37 -> b35 [label="true"];
+  b37 -> b36 [label="false"];
+  b38 -> b40 [label="loop_body"];
+  b38 -> b39 [label="loop_exit"];
+  b39 -> b42 [label="evaluate_rhs_false"];
+  b39 -> b41 [label="short_circuit_true"];
+  b40 -> b38 [label="unconditional"];
+  b41 -> b2 [label="goto"];
+  b42 -> b41 [label="true"];
+  b42 -> b43 [label="false"];
+  b43 -> b44 [label="true"];
+  b43 -> b45 [label="false"];
+  b44 -> b2 [label="goto"];
+  b45 -> b2 [label="unconditional"];
+  b46 -> b47 [label="unconditional"];
+  b47 -> b0 [label="return"];
+}

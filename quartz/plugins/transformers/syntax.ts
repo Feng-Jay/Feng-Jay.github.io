@@ -20,7 +20,19 @@ const defaultOptions: Options = {
 }
 
 export const SyntaxHighlighting: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
-  const opts: CodeOptions = { ...defaultOptions, ...userOpts }
+  const opts: CodeOptions = {
+    ...defaultOptions,
+    ...userOpts,
+    transformers: [
+      {
+        code(node) {
+          if (/(?:^|\s)hideLineNumbers(?:\s|$)/.test(this.options.meta?.__raw ?? "")) {
+            node.properties["data-hide-line-numbers"] = ""
+          }
+        },
+      },
+    ],
+  }
 
   return {
     name: "SyntaxHighlighting",

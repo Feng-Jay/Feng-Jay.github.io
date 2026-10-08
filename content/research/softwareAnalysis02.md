@@ -2,7 +2,7 @@
 title: NJU-Software Analysis-IR
 draft: false
 tags:
-  - Program Analysis
+  - ProgramAnalysis
   - IR
 description: NJU Software Analysis-IR
 date: 2025-03-27
