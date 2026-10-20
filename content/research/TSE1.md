@@ -2,6 +2,7 @@
 title: TSE#1-论文后日谈
 draft: false
 tags:
+  - phd grind
   - 漏洞
   - 论文
   - 思考
