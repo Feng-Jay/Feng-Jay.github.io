@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "百科/Intro.md",
+                "file": "百科/Reduction-SE开发流程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intro"
+              "title": "Reduction-SE开发流程"
             }
           }
         ]
@@ -172,12 +172,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "fbe361f8020d6c22",
+  "active": "4d53a96fcf42f87d",
   "lastOpenFiles": [
+    "百科/Intro.md",
     "7bd076035747b98770cf20fb2b2e45a8.txt",
     "research/TSE1.md",
     "百科/Reduction-SE开发流程.md",
-    "百科/Intro.md",
     "百科/SAILOR-Cases.md",
     "images/Reduction-SE开发流程W53.png",
     "images/Reduction-SE开发流程W52.png",
@@ -213,7 +213,6 @@
     "ideas/精神分析一则.md",
     "Users/ffengjay/Postgraduate/Prepare4Phd/LLM4Security/results/claudecode_in_house_without_localization/linux-a53046291020ec41e09181396c1e829287b48d47-CWE-476/report.txt.md",
     "Users/ffengjay/Postgraduate/Prepare4Phd/LLM4Security/results/claudecode_in_house_without_localization/linux-a53046291020ec41e09181396c1e829287b48d47-CWE-476",
-    "Users/ffengjay/Postgraduate/Prepare4Phd/LLM4Security/results/claudecode_in_house_without_localization",
     "任务/主线任务A1-探索FP-Filtering.md",
     "research/Investigation about concolic execution for vul detection.md",
     "research/softwareAnalysis04.md",
