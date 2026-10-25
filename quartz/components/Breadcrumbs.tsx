@@ -1,6 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import breadcrumbsStyle from "./styles/breadcrumbs.scss"
-import { FullSlug, SimpleSlug, joinSegments, resolveRelative } from "../util/path"
+import { FullSlug, SimpleSlug, joinSegments, resolveRelative, simplifySlug } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 
@@ -19,6 +19,10 @@ interface BreadcrumbOptions {
    */
   rootName: string
   /**
+   * Page used as the root of the breadcrumb hierarchy
+   */
+  rootSlug: FullSlug
+  /**
    * Whether to look up frontmatter title for folders (could cause performance problems with big vaults)
    */
   resolveFrontmatterTitle: boolean
@@ -35,6 +39,7 @@ interface BreadcrumbOptions {
 const defaultOptions: BreadcrumbOptions = {
   spacerSymbol: "❯",
   rootName: "Home",
+  rootSlug: "index" as FullSlug,
   resolveFrontmatterTitle: true,
   hideOnRoot: true,
   showCurrentPage: true,
@@ -60,12 +65,12 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
     displayClass,
   }: QuartzComponentProps) => {
     // Hide crumbs on root if enabled
-    if (options.hideOnRoot && fileData.slug === "index") {
+    if (options.hideOnRoot && (fileData.slug === "index" || fileData.slug === options.rootSlug)) {
       return <></>
     }
 
     // Format entry for root element
-    const firstEntry = formatCrumb(options.rootName, fileData.slug!, "/" as SimpleSlug)
+    const firstEntry = formatCrumb(options.rootName, fileData.slug!, simplifySlug(options.rootSlug))
     const crumbs: CrumbData[] = [firstEntry]
 
     if (!folderIndex && options.resolveFrontmatterTitle) {

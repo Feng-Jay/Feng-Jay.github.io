@@ -1,6 +1,8 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { SimpleSlug } from "./quartz/util/path"
+import { FullSlug, SimpleSlug } from "./quartz/util/path"
+
+const kbRoot = "kb" as FullSlug
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -23,9 +25,9 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     links: {
-      Home: "/",
+      Home: "/kb",
       GitHub: "https://github.com/Feng-Jay",
-      "Knowledge Base": "/kb",
+      "Personal Homepage": "/",
     },
   }),
 }
@@ -33,13 +35,13 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
+    Component.Breadcrumbs({ rootSlug: kbRoot }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
+    Component.PageTitle({ title: "Knowledge Base", rootSlug: kbRoot }),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -79,9 +81,13 @@ export const defaultContentPageLayout: PageLayout = {
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs({ rootSlug: kbRoot }),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+  ],
   left: [
-    Component.PageTitle(),
+    Component.PageTitle({ title: "Knowledge Base", rootSlug: kbRoot }),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),

@@ -13,4 +13,4 @@ I am a Ph.D. student at the Wise Software Engineering Lab (WISE), Tianjin Univer
 
 I am interested in philosophy, history, psychology, fiction, and running. I keep [[reading/index|reading notes]] and [[ideas/index|ideas]] here as they develop.
 
-Return to the [[index|homepage]].
+Visit my [[index|personal homepage]].
