@@ -7,14 +7,14 @@ Welcome to my personal knowledge base. I use this Quartz garden to organize rese
 
 <div class="rss-subscribe">
   <a class="rss-subscribe-button" href="https://www.fengjieli.top/index.xml" type="application/rss+xml" data-router-ignore aria-describedby="rss-subscribe-help">
-    <svg class="rss-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false">
+    <svg class="rss-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true" focusable="false">
       <path d="M4 11a9 9 0 0 1 9 9" />
       <path d="M4 4a16 16 0 0 1 16 16" />
       <circle cx="5" cy="19" r="1" fill="currentColor" />
     </svg>
     <span>Subscribe via RSS</span>
   </a>
-  <p id="rss-subscribe-help">Follow my writing in your RSS reader. Copy the button's link to subscribe.</p>
+  <p id="rss-subscribe-help">Copy link to your RSS reader.</p>
 </div>
 
 ## Research
