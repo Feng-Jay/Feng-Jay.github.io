@@ -26,6 +26,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       Home: "/kb",
+      "Subscribe via RSS": "https://www.fengjieli.top/index.xml",
       GitHub: "https://github.com/Feng-Jay",
       "Personal Homepage": "/",
     },
