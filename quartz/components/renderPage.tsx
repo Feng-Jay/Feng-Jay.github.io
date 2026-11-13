@@ -23,6 +23,7 @@ interface RenderComponents {
 }
 
 const headerRegex = new RegExp(/h[1-6]/)
+const stylesheetVersion = Date.now().toString(36)
 export function pageResources(
   baseDir: FullSlug | RelativeURL,
   fileData: QuartzPluginData,
@@ -34,7 +35,7 @@ export function pageResources(
   const resources: StaticResources = {
     css: [
       {
-        content: joinSegments(baseDir, "index.css"),
+        content: `${joinSegments(baseDir, "index.css")}?v=${stylesheetVersion}`,
       },
       ...staticResources.css,
     ],
