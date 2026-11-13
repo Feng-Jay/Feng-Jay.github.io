@@ -91,6 +91,10 @@ const config: QuartzConfig = {
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
+        rssFilter: (file) => {
+          const slug = file.slug ?? ""
+          return /^(ideas|reading|research)\//.test(slug) && !slug.endsWith("/index")
+        },
       }),
       Plugin.Assets(),
       Plugin.Static(),

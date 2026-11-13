@@ -4,6 +4,7 @@ import { getDate } from "../../components/Date"
 import { escapeHTML } from "../../util/escape"
 import { FilePath, FullSlug, SimpleSlug, joinSegments, simplifySlug } from "../../util/path"
 import { QuartzEmitterPlugin } from "../types"
+import { QuartzPluginData } from "../vfile"
 import { toHtml } from "hast-util-to-html"
 import { write } from "./helpers"
 import { i18n } from "../../i18n"
@@ -24,6 +25,7 @@ export type ContentDetails = {
 interface Options {
   enableSiteMap: boolean
   enableRSS: boolean
+  rssFilter?: (file: QuartzPluginData) => boolean
   rssLimit?: number
   rssFullHtml: boolean
   rssSlug: string
@@ -120,11 +122,12 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       const cfg = ctx.cfg.configuration
       const emitted: FilePath[] = []
       const linkIndex: ContentIndexMap = new Map()
+      const rssIndex: ContentIndexMap = new Map()
       for (const [tree, file] of content) {
         const slug = file.data.slug!
         const date = getDate(ctx.cfg.configuration, file.data) ?? new Date()
         if (opts?.includeEmptyFiles || (file.data.text && file.data.text !== "")) {
-          linkIndex.set(slug, {
+          const details: ContentDetails = {
             slug,
             title: file.data.frontmatter?.title!,
             links: file.data.links ?? [],
@@ -135,7 +138,11 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
               : undefined,
             date: date,
             description: file.data.description ?? "",
-          })
+          }
+          linkIndex.set(slug, details)
+          if (opts?.enableRSS && (opts.rssFilter?.(file.data) ?? true)) {
+            rssIndex.set(slug, details)
+          }
         }
       }
 
@@ -154,7 +161,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
         emitted.push(
           await write({
             ctx,
-            content: generateRSSFeed(cfg, linkIndex, opts.rssLimit),
+            content: generateRSSFeed(cfg, rssIndex, opts.rssLimit),
             slug: (opts?.rssSlug ?? "index") as FullSlug,
             ext: ".xml",
           }),
